@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-# Pokemon Catalog App
+# Pokemon App
 
 This is a frontend application built using Next.js, React-Query, Styled-Components, and React-ApexCharts in TypeScript. It leverages the PokeAPI to display various Pokémon categories and details.
 
@@ -56,7 +56,13 @@ This is a frontend application built using Next.js, React-Query, Styled-Componen
 
    ```bash
    npm run test
-   
+
+## Deployed Version on Vercel
+
+The Pokemon App is also deployed on Vercel. You can access the deployed version using the following URL:
+
+https://pokemon-7bv1ps270-mukeshlandedworlds-projects.vercel.app
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
