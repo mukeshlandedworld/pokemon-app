@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import PokemonChart from './PokemonChart';
+import PokemonChart from '../components/PokemonChart';
 
 describe('PokemonChart Component', () => {
   it('renders without crashing', () => {

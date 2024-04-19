@@ -2,7 +2,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import PokemonDetails from './PokemonDetails';
+import PokemonDetails from '../pages/PokemonDetails';
 
 // Mock the useParams hook
 jest.mock('react-router-dom', () => ({

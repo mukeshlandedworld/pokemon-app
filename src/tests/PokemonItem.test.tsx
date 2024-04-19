@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import PokemonItem from './PokemonItem';
+import PokemonItem from '../components/PokemonItem';
 
 // Mock the pokemon data
 const mockPokemon = {

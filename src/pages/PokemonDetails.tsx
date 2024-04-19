@@ -1,6 +1,6 @@
 import PokemonChart from '@/components/PokemonChart';
 import { usePokemonDetailsQuery } from '@/queries/queries';
-import React, {  } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 // Styled Components
@@ -32,16 +32,16 @@ const ModalContent = styled.div`
 `;
 
 type PokemonDetailsProps = {
-  pokemon: {
+  pokemon?: {
     name: string;
     category: string;
   };
 };
 
 const PokemonDetails: React.FC<PokemonDetailsProps> = ({ pokemon }) => {
-  const { name: pokemonName, category: categoryName } = pokemon;
+  const { name: pokemonName, category: categoryName } = pokemon ?? {};
 
-  const { data: pokemonDetails, isLoading, isError } = usePokemonDetailsQuery(categoryName, pokemonName);
+  const { data: pokemonDetails, isLoading, isError } = usePokemonDetailsQuery(categoryName ?? '', pokemonName ?? '');
 
   if (isLoading) return <div>Loading Pokémon details...</div>;
 
@@ -85,7 +85,7 @@ const PokemonDetails: React.FC<PokemonDetailsProps> = ({ pokemon }) => {
     <>
         <ModalOverlay onClick={closeModal}>
           <ModalContent>
-          <h3>{pokemon.name} Berry Details</h3>
+          <h3>{pokemon?.name} Berry Details</h3>
           <p>Name: {pokemonDetails?.name}</p>
           <p>Firmness: {pokemonDetails?.firmness?.name}</p>
           <p>Growth Time: {pokemonDetails?.growth_time} days</p>

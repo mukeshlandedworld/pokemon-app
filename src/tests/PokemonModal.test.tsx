@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import PokemonModal from './PokemonModal';
+import PokemonModal from '../components/PokemonModal';
 
 // Mock the onClose function
 const mockOnClose = jest.fn();
