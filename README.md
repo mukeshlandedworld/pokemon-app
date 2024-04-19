@@ -31,12 +31,12 @@ This is a frontend application built using Next.js, React-Query, Styled-Componen
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/pokemon-catalog-app.git
+   git clone https://github.com/mukeshlandedworld/pokemon-app.git
 
 2. Navigate to the project directory:
 
    ```bash
-   cd pokemon-catalog-app
+   cd pokemon-app
 
 3. Install dependencies:
 
