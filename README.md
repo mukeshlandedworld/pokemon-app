@@ -51,7 +51,12 @@ This is a frontend application built using Next.js, React-Query, Styled-Componen
   yarn dev
   ```
   Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  
+5. Testing:
 
+   ```bash
+   npm run test
+   
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
